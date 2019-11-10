@@ -11,17 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('app');
+
+Route::group(['prefix' => '/'], function ($router) {
+  Route::get('/', 'HomeController@index');
+  Route::get('/tentang-kami', 'HomeController@tentangPage');
+  Route::get('/program-kerja', 'HomeController@programKerjPage');
+  Route::get('/blog', 'BlogController@index');
 });
 
 Route::group(['prefix' => 'admin'], function ($router) {
-//  Route::get('/login', function () {
-//    return View::make('portal/login');
-//  });
+  Route::get('/', function (){
+    return redirect('/admin/dashboard');
+  });
   Route::get('/login', 'portal\UserController@login');
   Route::post('/login', 'portal\UserController@loginPost');
-
+  Route::post('/logout', 'portal\UserController@logout');
   Route::get('/dashboard', 'portal\DashboardController@index');
-
 });

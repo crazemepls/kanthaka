@@ -4,7 +4,7 @@
     <div class="site-blocks-cover" id="home-section">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-md-12" style="position: relative;" data-aos="fade-up">
+                <div class="col-md-12 mt-5 mt-md-0 mt-xl-0" style="position: relative;" data-aos="fade-up">
                     <div class="row align-items-center text-center text-md-left cover-content">
                         <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
                             <h1>Ayo Belajar Dhamma Bersama!</h1>
@@ -169,39 +169,22 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="section-title mb-3">Blog Posts</h2>
+                    <h2 class="section-title mb-3">Blog</h2>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="h-entry">
-                        <img src="assets/images/img_1.jpg" alt="Image" class="img-fluid">
-                        <h2><a href="#">Create interactive prototypes</a></h2>
-                        <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                        <p><a href="#">Continue Reading...</a></p>
+                @foreach($blogs as $blog)
+                    <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
+                        <div class="h-entry">
+                            <img src={{$blog->thumbnail}} alt="thumbnail" class="img-fluid">
+                            <h2><a href="#">{{$blog->title}}</a></h2>
+                            <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span>{{$blog->created_at}}<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
+                            <p>{{$blog->content}}</p>
+                            <p><a href="/blog/{{$blog->slug}}">Continue Reading...</a></p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="h-entry">
-                        <img src="assets/images/img_2.jpg" alt="Image" class="img-fluid">
-                        <h2><a href="#">Create interactive prototypes</a></h2>
-                        <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                        <p><a href="#">Continue Reading...</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 mb-4 mb-lg-4">
-                    <div class="h-entry">
-                        <img src="assets/images/img_3.jpg" alt="Image" class="img-fluid">
-                        <h2><a href="#">Create interactive prototypes</a></h2>
-                        <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea maiores sapiente veritatis reprehenderit suscipit quaerat rerum voluptatibus a eius.</p>
-                        <p><a href="#">Continue Reading...</a></p>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>
@@ -215,13 +198,8 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-7 mb-5">
-
-
-
                     <form action="#" class="p-5 bg-white">
-
                         <h2 class="h4 text-black mb-5">Contact Form</h2>
-
                         <div class="row form-group">
                             <div class="col-md-6 mb-3 mb-md-0">
                                 <label class="text-black" for="fname">First Name</label>
@@ -234,13 +212,11 @@
                         </div>
 
                         <div class="row form-group">
-
                             <div class="col-md-12">
                                 <label class="text-black" for="email">Email</label>
                                 <input type="email" id="email" class="form-control rounded-0">
                             </div>
                         </div>
-
                         <div class="row form-group">
 
                             <div class="col-md-12">
@@ -261,13 +237,9 @@
                                 <input type="submit" value="Send Message" class="btn btn-primary mr-2 mb-2">
                             </div>
                         </div>
-
-
                     </form>
                 </div>
-
             </div>
-
         </div>
     </div>
 @endsection

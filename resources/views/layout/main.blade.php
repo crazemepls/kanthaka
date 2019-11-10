@@ -60,7 +60,7 @@
                     <nav class="site-navigation position-relative text-right" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li><a href="/" class="nav-link">Beranda</a></li>
-                            <li><a href="#tentang-kami-section" class="nav-link">Tentang Kami</a></li>
+                            <li><a href={{url('tentang-kami')}} class="nav-link">Tentang Kami</a></li>
                             <li><a href="#program-kerja-section" class="nav-link">Program Kerja</a></li>
                             <li><a href="#blog-section" class="nav-link">Blog</a></li>
                             <li><a href="#kontak-section" class="nav-link">Kontak</a></li>
@@ -119,9 +119,8 @@
                         Setiap Sabtu Pukul 13.00 WIB - 15.00 WIB<br>
                         Setiap Minggu Pukul 11.00 WIB - 13.00 WIB<br>
                     </p>
-
                 </div>
-                <div class="mb-5 col-md-3">
+                <div class="mb-5 col-md-3 px-4">
                     <p class="font-weight-bold mb-0">Mari Ikuti Kami</p>
                     <div class="nav-container d-flex nav">
                         <div>
@@ -153,7 +152,6 @@
         </div>
     </div>
 </div> <!-- .site-wrap -->
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src={{asset("js/jquery-3.3.1.min.js")}}></script>
 <script src={{asset("js/jquery-migrate-3.0.1.min.js")}}></script>
 <script src={{asset("js/jquery-ui.js")}}></script>

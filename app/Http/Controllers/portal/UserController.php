@@ -3,12 +3,14 @@
 
 namespace App\Http\Controllers\portal;
 
+use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
-class UserController
+class UserController extends Controller
 {
   public function index(){
     if(!Session::get('login')){
@@ -24,6 +26,19 @@ class UserController
   }
 
   public function loginPost(Request $request){
+    $rules = array(
+      'email' => 'required|string',
+      'password' => 'required|string');
+    $messages = array(
+      'email.required' => 'Email harus diisi.',
+      'password.required' => 'Password harus diisi');
+
+    $validator = Validator::make($request->all(), $rules);
+
+    if ($validator->fails()) {
+      return redirect('/admin/login')->withErrors($validator);
+  }
+
     $email = $request->input('email');
     $password = $request->input('password');
 
@@ -38,7 +53,7 @@ class UserController
         return redirect('/admin/dashboard');
       }
       else{
-        return redirect('/admin/login')->with('alert','Wrong email or password!');
+        return redirect('/admin/login')->withErrors(['login' => 'Email atau password salah']);
       }
     }
     else{
@@ -48,7 +63,7 @@ class UserController
 
   public function logout(){
     Session::flush();
-    return redirect('login')->with('alert','Kamu sudah logout');
+    return redirect('/admin/login');
   }
 
   public function register(Request $request){
