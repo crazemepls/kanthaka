@@ -19,11 +19,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::group(['middleware' => 'auth.api'], function ($router) {
+Route::group(['prefix' => 'v1'], function ($router) {
   Route::post('register', 'AuthController@register');
   Route::post('login', 'AuthController@login');
-  Route::get('profile', 'UserController@profile');
-  Route::get('users/{id}', 'UserController@singleUser');
-  Route::get('users', 'UserController@allUsers');
+  Route::get('profile', 'UserController@profile')->middleware('auth:api');
+  Route::get('users/{id}', 'UserController@singleUser')->middleware('auth:api');
+  Route::get('users', 'UserController@allUsers')->middleware('auth:api');
 });
 

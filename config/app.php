@@ -67,7 +67,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => env('APP_TIMEZONE', 'UTC'),
 
     /*
     |--------------------------------------------------------------------------
@@ -161,6 +161,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -229,7 +230,7 @@ return [
       'View' => Illuminate\Support\Facades\View::class,
       'Responder' => Flugg\Responder\Facades\Responder::class,
       'Transformation' => Flugg\Responder\Facades\Transformation::class,
-
+      'DataTables' => Yajra\DataTables\Facades\DataTables::class,
     ],
 
 ];

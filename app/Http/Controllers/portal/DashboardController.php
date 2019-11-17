@@ -8,15 +8,16 @@ use App\User;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
+use function Sodium\compare;
 
 class DashboardController extends Controller
 {
   public function index(){
-    if(!Session::get('login')){
-      return redirect('/admin/login');
-    }
-    else{
-      return view('portal/dashboard');
-    }
+    $data  = array(
+      "page" => "dashboard",
+      "title" => "Dashboard"
+    );
+    return view('portal/dashboard', compact('data'));
+
   }
 }

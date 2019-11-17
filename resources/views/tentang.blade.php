@@ -4,7 +4,7 @@
     <div class="site-section">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="row mb-5">
+                <div class="row mt-4">
                     <div class="col-12 text-center">
                         <h2 class="section-title mb-3">Apa itu Vidyasena?</h2>
                     </div>

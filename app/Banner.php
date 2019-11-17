@@ -5,7 +5,7 @@ namespace App;
 use Dyrynda\Database\Support\GeneratesUuid;
 use Illuminate\Database\Eloquent\Model;
 
-class Blog extends Model
+class Banner extends Model
 {
   use GeneratesUuid;
 
@@ -18,6 +18,4 @@ class Blog extends Model
   {
     return false;
   }
-
-
 }
