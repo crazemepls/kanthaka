@@ -44,11 +44,19 @@
 
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-1 d-none d-lg-block">
-                    <a href="" class="navbar-brand align-middle">
-                        <img src="https://pbs.twimg.com/profile_images/248185979/logo_Vidyasena.bmp" alt="" style="height :50px;">
-                    </a>
+                <div class="col-4 d-none d-lg-inline">
+                    <div class="row">
+                        <div class="col-2">
+                            <a href="/" class="navbar-brand align-middle">
+                                <img src="https://pbs.twimg.com/profile_images/248185979/logo_Vidyasena.bmp" alt="" style="height :50px;">
+                            </a>
+                        </div>
+                        <div class="col-10 my-auto">
+                            <span class="font-weight-bold">Vidyāsenā Vihāra Vidyāloka</span>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-6 col-md-6 col-xl-2  d-block d-lg-none">
                     <h1 class="mb-0 site-logo">
                         <a href="index.html" class="navbar-brand">
@@ -56,14 +64,14 @@
                         </a>
                     </h1>
                 </div>
-                <div class="col-11 col-md-11 main-menu">
+                <div class="col-8 col-md-8 main-menu">
                     <nav class="site-navigation position-relative text-right" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li><a href="/" class="nav-link">Beranda</a></li>
-                            <li><a href={{url('tentang-kami')}} class="nav-link">Tentang Kami</a></li>
-                            <li><a href="#program-kerja-section" class="nav-link">Program Kerja</a></li>
-                            <li><a href="#blog-section" class="nav-link">Blog</a></li>
-                            <li><a href="#kontak-section" class="nav-link">Kontak</a></li>
+                            <li><a href={{ url("tentang-kami") }} class="nav-link">Tentang Kami</a></li>
+                            <li><a href={{ url("program-kerja") }} class="nav-link">Program Kerja</a></li>
+                            <li><a href={{ url("blog") }} class="nav-link">Blog</a></li>
+                            <li><a href="#kontak" class="nav-link">Kontak</a></li>
                         </ul>
                     </nav>
                 </div>

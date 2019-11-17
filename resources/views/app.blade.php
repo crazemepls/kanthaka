@@ -1,17 +1,14 @@
 @extends('layout.main')
 @section('title','Vidyasena Vihara Vidyaloka')
 @section('content')
-    <div class="site-blocks-cover" id="home-section">
+    <div class="site-blocks-cover" id="home">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-md-12 mt-5 mt-md-0 mt-xl-0" style="position: relative;" data-aos="fade-up">
                     <div class="row align-items-center text-center text-md-left cover-content">
                         <div class="col-md-6 col-lg-5 mb-5 mb-md-0">
-                            <h1>Ayo Belajar Dhamma Bersama!</h1>
+                            <h1 class="mb-5">Ayo Belajar Dhamma Bersama!</h1>
                             <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
-                            <div>
-                                <a href="#" class="btn btn-primary mr-2 mb-2">Let's Go</a>
-                            </div>
                         </div>
                         <div class="col-md-6 col-lg-7 col-xl-6 offset-xl-1">
                             <img src={{asset("images/meditation.svg")}} alt="Image" class="img-fluid" style="width: 90%;">
@@ -23,7 +20,7 @@
     </div>
 
 
-    <div class="site-section bg-light" id="tentang-kami-section">
+    <div class="site-section bg-light" id="tentang-kami">
         <div class="container">
             <div class="row mb-5">
                 <div class="col-lg-6">
@@ -34,7 +31,7 @@
                     <p class="mb-4">Dalam bahasa sansekerta, "Vidya" berarti Pengetahuan dan "Sena" berarti prajurit
                         sehingga vidyasena berarti "Prajurit Pengetahuan". Sejak tahun 1986, Vidyasena telah aktif mengembangkan dhamma di Yogyakarta dan Indonesia.
                     </p>
-                    <p><a href="#" class="btn btn-primary">Baca Selengkapnya</a></p>
+                    <p><a href= {{ url("tentang-kami") }} class="btn btn-primary">Baca Selengkapnya</a></p>
                 </div>
             </div>
         </div>
