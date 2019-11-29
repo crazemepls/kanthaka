@@ -67,9 +67,10 @@
       var ckeOptions = {
           entities: false,
           htmlEncodeOutput: false,
-          htmlDecodeOutput: true
+          htmlDecodeOutput: true,
+          allowedContent: true
       };
-
+      CKEDITOR.config.contentsCss = 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css';
       CKEDITOR.replace('blog_content', ckeOptions);
       CKEDITOR.config.extraPlugins = 'justify';
   </script>

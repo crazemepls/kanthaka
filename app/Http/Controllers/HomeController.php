@@ -9,7 +9,11 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
   public function index() {
-    $blogs = Blog::all()->take(6);
+    $blogs = Blog::orderBy('created_at', 'DESC')->take(6)->get();
+    foreach ($blogs as $blog) {
+      $blog->content = htmlspecialchars_decode($blog->content);
+    }
+
     $banners = Banner::all()->take(5);
     return view('app', compact('blogs', 'banners'));
   }
