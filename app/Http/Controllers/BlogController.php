@@ -9,8 +9,8 @@ use http\Env\Request;
 
 class BlogController extends Controller {
   public function index() {
-    $blog = Blog::all()->limit(3);
-    return view('blog', compact('blog'));
+    $blogs = Blog::paginate(6);
+    return view('blog.list', compact('blogs'));
   }
 
   public function detail($slug) {
@@ -22,6 +22,6 @@ class BlogController extends Controller {
       $blog = $res;
     }
 
-    return view('blog', compact('blog'));
+    return view('blog.detail', compact('blog'));
   }
 }

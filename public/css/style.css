@@ -14,10 +14,12 @@ body {
   color: #fff; }
 
 a {
+  color: #014da2;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   a:hover {
+    color: #013162;
     text-decoration: none; }
 
 h1, h2, h3, h4, h5,
@@ -1238,8 +1240,8 @@ h1, h2, h3, h4, h5,
     border-radius: 50%;
     display: inline-block;
     background-color: #014DA2;
-    -webkit-box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4);
-    box-shadow: 0 4px 20px -5px rgba(0, 210, 181, 0.4); }
+    -webkit-box-shadow: 0 4px 20px -5px rgba(7, 5, 79, 0.86);
+    box-shadow: 0 4px 20px -5px rgba(7, 5, 79, 0.86); }
     .unit-4 .unit-4-icon .icon-wrap span {
       font-size: 1.5rem;
       position: absolute;
@@ -1834,9 +1836,30 @@ h1, h2, h3, h4, h5,
   width: auto;
 }
 
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
 .no-border {
   border: none !important;
 }
+
+/*Override*/
+.page-link {
+  color: #0d0cb5 !important;
+}
+
+.page-item.active .page-link {
+  color: #ffffff !important;
+  background-color: #0d0cb5 !important;
+  border-color: #0d0cb5 !important;
+}
+
+.page-link:active{
+  box-shadow: #0d0cb5;
+}
+
+
 
 @media (max-width: 991.98px) {
   .site-logo {

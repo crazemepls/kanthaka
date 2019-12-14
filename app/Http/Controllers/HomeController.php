@@ -15,7 +15,7 @@ class HomeController extends Controller
     }
 
     $banners = Banner::all()->take(5);
-    return view('app', compact('blogs', 'banners'));
+    return view('index', compact('blogs', 'banners'));
   }
 
   public function tentangPage() {

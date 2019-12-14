@@ -4,7 +4,7 @@
     <div class="site-section">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="row mt-4">
+                <div class="row mt-5">
                     <div class="col-12 text-center">
                         <h2 class="section-title mb-5">Apa itu Vidyasena?</h2>
                     </div>
@@ -19,7 +19,7 @@
 
                         <p class="text-justify mx-4 mx-md-0 mx-lg-0">Cikal bakal Vidyasena berasal dari Buddha Dhamma Study Group Yogyakarta (BSDGY) . BDSGY didirikan tahun 1984 dengan tujuan mengkaji Buddha Dhamma secara teori dan terapan, bersifat non-sekte. Salah saktu tokoh BDSGY adalah Bambang Pratignyo (sekarang adalah Y.M. Bhikkhu Uttamo Mahathera) dan Dharmanadi Chandra. Namun akhirnya organisasi ini bubar. Melihat kondisi ini, Dharmanadi Chandra bersama rekan-rekan lain yang se-'ide' membentuk suatu organisasi baru. Organisasi ini ber-mazhab-kan Theravada. Sebagai tempat dipilihlah Vihara Vidyaloka. </p>
 
-                        <p class="text-justify mmx-4 mx-md-0 mx-lg-0">Turut membidani lahirnya organisasi ini adalah Bhikkhu Pannavaro (sekarang adalah Y.M. Bhikkhu Sri Pannavaro Mahathera), Samanera Jotidhammo (sekarang adalah Y.M. Bhikkhu Jotidhammo Mahathera dan menjadi penasehat Vidyasena) dan Samanera Uttamo (sekarang adalah Y.M. Bhikkhu Uttamo Mahathera). Nama 'Vidyasena' diusulkan oleh Bhikkhu Jotidhammo dan kemudian disetujui oleh Bhikkhu Pannavaro. Pada tanggal 1 Februari 1987 pukul 10.00 WIB, Vidyasena resmi terbentuk </p>
+                        <p class="text-justify mx-4 mx-md-0 mx-lg-0">Turut membidani lahirnya organisasi ini adalah Bhikkhu Pannavaro (sekarang adalah Y.M. Bhikkhu Sri Pannavaro Mahathera), Samanera Jotidhammo (sekarang adalah Y.M. Bhikkhu Jotidhammo Mahathera dan menjadi penasehat Vidyasena) dan Samanera Uttamo (sekarang adalah Y.M. Bhikkhu Uttamo Mahathera). Nama 'Vidyasena' diusulkan oleh Bhikkhu Jotidhammo dan kemudian disetujui oleh Bhikkhu Pannavaro. Pada tanggal 1 Februari 1987 pukul 10.00 WIB, Vidyasena resmi terbentuk </p>
 
                         <p class="text-justify mx-4 mx-md-0 mx-lg-0">&nbsp;</p>
 
@@ -49,7 +49,7 @@
                         <h3 class="text-justify mx-4 mx-md-0 mx-lg-0"><strong>Vidyasena sebagai Sekolah</strong></h3>
                         <p class="text-justify mx-4 mx-md-0 mx-lg-0">Secara sederhana Vidyasena terbagi atas tiga level: <i>basic</i>, <i>intermediate</i>, dan <i>advanced</i></p>
                         <p class="text-justify mx-4 mx-md-0 mx-lg-0">
-                            <img class="img-fluid float-right ml-3" style="width:400px; " alt="" src={{ url("/images/Dhammatalk.jpg") }} />
+                            <img class="img-fluid float-right ml-3" style="width:400px; " alt="" src={{ url("/images/Dhammatalk.webp") }} />
                             <ul>
                                 <li>
                                 Untuk level <i>pre basic</i>, Vidyasena dipandang sebagai tempat untuk mencari teman, ajang gaul, tempat pergaulan, dan lain lain. Tentu hal ini tidak salah, namun jika hanya atas alasan mencari teman, maka rasanya rugi karena Vidyasena mempunyai kapasitas yang jauh lebih besar dari sekadar itu.
@@ -72,7 +72,7 @@
                         <h3 class="text-justify mx-4 mx-md-0 mx-lg-0"><strong>Vidyasena dan Dayakasabha</strong></h3>
     
                         <p class="text-justify mx-4 mx-md-0 mx-lg-0">
-                            <img class="img-fluid float-right ml-3" style="width:400px; " alt="" src={{ url("/images/Pindapata.jpg") }} />
+                            <img class="img-fluid float-right ml-3" style="width:400px; " alt="" src={{ url("/images/Pindapata.webp") }} />
                             Bila dibandingkan dengan Dayakasabha lainnya di Vihara lain, Vidyasena memiliki keunikan tersendiri. Selain sebagai organisasi pemuda yang bergerak di bidang keagamaan dan sosial kemasyarakatan, Vidyasena memiliki status sebagai organisasi pengurus Vihara, yaitu Dayakasabha Vihara Vidyaloka. Ketua Umun dan Sekretaris Umum memiliki fungsi dan tanggungjawab sebagai Ketua dan Wakil Ketua Dayakasabha.
                         </p>
 
