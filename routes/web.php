@@ -50,3 +50,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth:admin'], function ($rou
   Route::post('/banner/{id}', 'portal\BannerController@update');
 });
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

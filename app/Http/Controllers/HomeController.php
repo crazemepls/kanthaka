@@ -2,32 +2,27 @@
 
 namespace App\Http\Controllers;
 
-use App\Banner;
-use App\Blog;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-  public function index() {
-    $blogs = Blog::orderBy('created_at', 'DESC')->take(6)->get();
-    foreach ($blogs as $blog) {
-      $blog->content = htmlspecialchars_decode($blog->content);
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
     }
 
-    $banners = Banner::all()->take(5);
-    return view('index', compact('blogs', 'banners'));
-  }
-
-  public function tentangPage() {
-    return view('tentang');
-  }
-
-  public function programKerjaPage() {
-    return view('program-kerja');
-  }
-
-  public function kontakPage() {
-    return view('kontak');
-  }
-
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Contracts\Support\Renderable
+     */
+    public function index()
+    {
+        return view('/home');
+    }
 }
