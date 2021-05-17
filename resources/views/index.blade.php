@@ -11,7 +11,7 @@
               <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda ea quo cupiditate facere deleniti fuga officia.</p>
             </div>
             <div class="col-md-6 col-lg-7 col-xl-6 offset-xl-1">
-              <img src={{asset("images/meditation.svg")}} alt="Image" class="img-fluid" style="width: 90%;">
+              <img src={{asset("images/meditation.svg ")}} alt="Image" class="img-fluid" style="width: 90%;">
             </div>
           </div>
         </div>

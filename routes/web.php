@@ -15,7 +15,8 @@
 Route::group(['prefix' => '/'], function ($router) {
   Route::get('/', 'HomeController@index');
   Route::get('/tentang-kami', 'HomeController@tentangPage');
-  Route::get('/program-kerja', 'HomeController@programKerjPage');
+  Route::get('/program-kerja', 'HomeController@programKerjaPage');
+  Route::get('/kontak', 'HomeController@kontakPage');
   Route::get('/blog', 'BlogController@index');
   Route::get('/blog/{slug}', 'BlogController@detail');
 });

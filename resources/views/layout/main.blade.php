@@ -74,11 +74,11 @@
         <div class="col-8 col-md-8 main-menu">
           <nav class="site-navigation position-relative text-right" role="navigation">
             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-              <li><a id="beranda" class="nav-link cursor-pointer">Beranda</a></li>
-              <li><a id="tentang-kami"  class="nav-link cursor-pointer">Tentang Kami</a></li>
-{{--              <li><a id="program-kerja" class="nav-link cursor-pointer">Program Kerja</a></li>--}}
-              <li><a id="blog" class="nav-link cursor-pointer">Blog</a></li>
-              <li><a id="kontak" class="nav-link cursor-pointer">Kontak</a></li>
+              <!-- <li><a id="beranda" class="nav-link cursor-pointer" href="{{URL::to('/')}}">Beranda</a></li> //PROBABLY UNUSED--> 
+              <li><a id="tentang-kami"  class="nav-link cursor-pointer" href="{{URL::to('tentang-kami')}}">Tentang Kami</a></li>
+              <li><a id="program-kerja" class="nav-link cursor-pointer" href="{{URL::to('program-kerja')}}">Program Kerja</a></li>
+              <li><a id="blog" class="nav-link cursor-pointer" href="{{URL::to('blog')}}">Blog</a></li>
+              <li><a id="kontak" class="nav-link cursor-pointer" href="{{URL::to('kontak')}}">Kontak</a></li>
             </ul>
           </nav>
         </div>
@@ -110,9 +110,6 @@
             Jalan Kenari Gang Tanjung I No. 231<br>
             Muja - Muju, Umbulharjo, Kota Yogyakarta<br>
             Daerah Istimewa Yogyakarta 55165<br>
-            <i class="fa fa-phone"></i> (0274) 2923432<br>
-            <i class="fab fa-whatsapp"></i> 085111111111<br>
-            <i class="fa fa-envelope"></i> vidyasena@ymail.com<br>
           </p>
           <p class="font-weight-bold mb-0">
             Puja Bhakti

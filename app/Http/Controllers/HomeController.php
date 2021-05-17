@@ -26,4 +26,8 @@ class HomeController extends Controller
     return view('program-kerja');
   }
 
+  public function kontakPage() {
+    return view('kontak');
+  }
+
 }
